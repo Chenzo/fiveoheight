@@ -1,0 +1,21 @@
+{
+  "name": "fiveoheight",
+  "version": "1.0.0",
+  "description": "how do you make good accessibile forms?",
+  "main": "index.js",
+  "license": "MIT",
+  "author": "Toll Brothers Web Team",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^1.5.3"
+  },
+  "dependencies": {
+    "gulp-sass": "^3.1.0",
+    "pump": "^2.0.0"
+  }
+}

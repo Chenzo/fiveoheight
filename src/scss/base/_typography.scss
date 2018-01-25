@@ -1,0 +1,24 @@
+
+
+$base_font_weight_thin: 200;
+$base_font_weight_normal: 300;
+$base_font_weight_thick: 400;
+$base_font_weight_bold: 700;
+
+$base_font_size: 15px;
+$base_line_height: 1.5;
+$base_font_color: #25211e;
+
+
+body {
+    text-rendering: optimizeLegibility;
+    //-webkit-font-smoothing: subpixel-antialiased;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Roboto Condensed', sans-serif;
+
+    font-size: $base_font_size;
+    font-weight: $base_font_weight_normal;
+    color: $base_font_color;
+
+}
+
