@@ -99,12 +99,12 @@ Default Watch Task
 runs the sass and javascript commands on change in the SRC folder
 
 */
-gulp.task('default', ['javascripting'] ,function() { //'styles', 
+gulp.task('default', ['styles', 'javascripting', 'updateCacheBuster'] ,function() {
 	browserSync.init({
 	    proxy: 'http://localhost:8088'
 	});
-	gulp.watch('./src/js/**/*.js',['js']);
-    gulp.watch('./src/scss/**/*.scss',['styles']);
+	gulp.watch('./src/js/**/*.js',['js', 'updateCacheBuster']);
+    gulp.watch('./src/scss/**/*.scss',['styles', 'updateCacheBuster']);
     gulp.watch("./www/*.php").on('change', browserSync.reload);
     gulp.watch("./www/*.html").on('change', browserSync.reload);
     gulp.watch("./www/**/*.php").on('change', browserSync.reload);
