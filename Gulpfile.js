@@ -19,8 +19,7 @@ var gulp = require('gulp'),
     pump = require('pump'),
 	replace = require('gulp-replace'),
 	fs = require('fs'),
-	path = require('path'),
-	babel = require('gulp-babel');
+	path = require('path');
 
 var browserSync = require('browser-sync').create();
 var scriptsPath = './src/js/';
