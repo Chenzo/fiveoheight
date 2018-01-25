@@ -13,7 +13,6 @@
     <body>
          <h1>Accessibility Form Tests</h1>
 
-
-         <!-- <script src="js/standalone.min.js"></script> -->
+         <script src="js/scripts.min.js"></script>
     </body>
 </html>

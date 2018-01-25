@@ -103,7 +103,7 @@ gulp.task('default', ['styles', 'javascripting', 'updateCacheBuster'] ,function(
 	browserSync.init({
 	    proxy: 'http://localhost:8088'
 	});
-	gulp.watch('./src/js/**/*.js',['js', 'updateCacheBuster']);
+	gulp.watch('./src/js/**/*.js',['javascripting', 'updateCacheBuster']);
     gulp.watch('./src/scss/**/*.scss',['styles', 'updateCacheBuster']);
     gulp.watch("./www/*.php").on('change', browserSync.reload);
     gulp.watch("./www/*.html").on('change', browserSync.reload);
